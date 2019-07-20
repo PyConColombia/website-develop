@@ -7,7 +7,7 @@
 </a>
 
 [![Build Status][build-badge]][build]
-[![PRs Welcome][prs-badge]][prs] 
+[![PRs Welcome][prs-badge]][prs]
 [![GitHub issues](https://img.shields.io/github/issues/PyConColombia/website-2020.svg?style=flat-square)](https://github.com/PyConColombia/website-2020/issues)
 [![Twitter Jopmi](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/pyconcolombia)
 
@@ -31,66 +31,119 @@ https://pyconcolombia.github.io/website-develop/
 
 Después de que se han ejecutado las pruebas de calidad (QA), los cambios
 realizados en la rama `develop` se unen con la rama `production` y son
-desplegados a través de gh-pages con Lektor a 
+desplegados a través de gh-pages con Lektor a
 https://pyconcolombia.github.io/website-2020/
 (pronto en http://www.pycon.co)
 
 # 🛠 Desarrollo local
 
-## ✅ (Opcional) Entorno Virtual
+✅ (Prerequisito) Instalar Yarn o Npm
+* [Instalar Npm](https://www.npmjs.com/package/install)
+* [Instalar Yarn](https://yarnpkg.com/lang/en/docs/install/#debian-stable)
+
+## 1. 😎 Usando Docker (La forma sencilla)
 
 ### Instalación
 
+Prerequisitos
+
+* [Instalar Docker](https://docs.docker.com/install/)
+* [Instalar Docker Compose](https://docs.docker.com/compose/install/)
+
+### Correr servicios (Se puede usar yarn o npm)
+
+* Levantar servicios de web y preprocesador de webpack.
+```
+yarn docker:up:dev
+```
+
+Con lo anterior ya estamos listos para abrir `http://localhost:5000` y empezar a codear!
+
+### Todos los comandos disponibles
+
+* A continuación se describe brevemente todos los comandos disponibles para mayor control y debugging.
+```
+yarn docker:up:clean      # Limpiar entorno (Esto limpia node_modules y carpeta dist)
+yarn docker:up:dev        # Correr servicios en modo desarrollo
+yarn docker:up:prod       # Correr servicios en modo producción - Esto compila los assets listos para subir al servidor
+yarn docker:logs:website  # Ver logs del contenedor web donde está lektor
+yarn docker:logs:webpack  # Ver logs del contenedor de webpack donde se preprocesan los archivos fuente de la carpeta assets.
+yarn docker:stop          # Para todos los servicios
+```
+
+
+## 2. Sin Docker
+
+✅ (Opcional) Entorno Virtual
+
 * Instalar [virtualenv](https://virtualenv.pypa.io/en/stable/installation/)
 
-* ⚠️️ Requiere previa instalación de Python ⚠️
+* ⚠️️ Requiere previa instalación de [Python](https://www.python.org/) ⚠️
+* ⚠️️ Requiere previa instalación de [Node](https://nodejs.org/en/) ⚠️
 
-### Crear entorno virtual
+### Entorno virtual de python
 
+* Crear entorno
 ```
 $ virtualenv <nombre_entorno>
 ```
 
-### Activar entorno virtual
+* Activar entorno virtual
 
-#### Windows
-
+Windows
 ```
 $ <nombre_entorno>\Scripts\activate
 ```
 
-#### Linux
-
+Linux
 ```
 $ source <nombre_entorno>/bin/activate
 ```
 
-## ✅ Instala Lektor
+### ✅ Instala Lektor
 
-### Usando pip:
+* Usando pip:
 ```
 $ pip install -U Lektor unidecode
 ```
 
-### Usando conda:
-
+* Usando conda:
 ```
 $ conda install lektor unidecode -c conda-forge
 ```
 
-## ✅ Instala (reinstala) los `plugins` locales
+### ✅ Instala (reinstala) los `plugins` locales
 
 ```
 $ lektor plugins reinstall
 ```
 
-## ✅ Corre el servidor local
+### ✅ Corre el servidor local
 
 ```
 $ lektor server --no-prune
 ```
 
-## ⁉️ Problemas comunes
+### Instala paquetes de npm relativos a preprocesadores de webpack + babel
+
+Instalar paquetes
+```
+yarn install
+```
+
+### ✅ Compilar assets
+
+En modo desarrollo
+```
+yarn build:dev
+```
+
+En modo producción
+```
+yarn build:prod
+```
+
+### ⁉️ Problemas comunes
 
 * 🔴 Si en algun momento luego de instalar python3 y crear tu virtualenv. haces `lektor server --no-prune` y ves este error:
 
@@ -102,6 +155,7 @@ Haz esto adentro de tu virtualenv:
 export LC_ALL=en_us.UTF-8
 export LANG=en_us.UTF-8
 ```
+
 
 # 🚀 Despliegue
 
@@ -136,7 +190,7 @@ Se desplegará el contenido de la rama `production` en `pycon.co`
 
 ## Cloudfare
 
-La página utiliza [Cloudfare](https://www.cloudflare.com/) como servicio de cache y manejo de dominios y reglas 
+La página utiliza [Cloudfare](https://www.cloudflare.com/) como servicio de cache y manejo de dominios y reglas
 de direccionamiento.
 
 ## Google Analytics
@@ -153,7 +207,7 @@ ___
 
 💪 Colaboradores
 
-|[<img src="https://avatars3.githubusercontent.com/u/3627835?s=400&v=4" width="100px;"/><br /><sub><b>Gonzalo Peña</b></sub>](https://github.com/goanpeca) | [<img src="https://avatars3.githubusercontent.com/u/14989202?s=400&v=4" width="100px;"/><br /><sub><b>Alejandro E. Rendon</b></sub>](https://github.com/aerendon)|
+|[<img src="https://avatars3.githubusercontent.com/u/3627835?s=400&v=4" width="100px;"/><br /><sub><b>Gonzalo Peña</b></sub>](https://github.com/goanpeca) | [<img src="https://avatars3.githubusercontent.com/u/14989202?s=400&v=4" width="100px;"/><br /><sub><b>Alejandro E. Rendon</b></sub>](https://github.com/arendondiosa)| [<img src="https://avatars2.githubusercontent.com/u/2729395?s=460&v=4" width="100px;"/><br /><sub><b>Sergio Alexander F.</b></sub>](https://github.com/xergioalex)|
 | :---: | :---: |
 
 </div>
