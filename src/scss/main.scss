@@ -1,9 +1,21 @@
+// Vars
 @import "config/variables";
+
+// Components
+@import "components/buttons";
+
+// Header
+@import "content/header";
+
+// Content
 @import "content/animations";
 @import "content/header";
 @import "content/content";
 @import "content/footer";
 @import "content/responsive";
+
+// Footer
+@import "content/footer";
 
 
 * {
@@ -24,3 +36,38 @@ a {
   }
 }
 
+
+h1, h2, h3 {
+  color: map_get($colors, _white);
+  font-weight: map_get($fonts-weigths, _bold);
+  text-shadow: 0.1rem 0.3rem 1.2rem rgba(132, 126, 126, 0.6);
+}
+
+h1 {
+  font-size: 5.1rem;
+}
+
+h2 {
+  font-size: 3.4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2.1rem;
+  color: map_get($colors, _white);
+  text-shadow: 0.1rem 0.3rem 1.2rem rgba(132, 126, 126, 0.6);
+}
+
+a {
+  color: map_get($colors, _white);
+  text-shadow: 0.1rem 0.3rem 1.2rem rgba(132, 126, 126, 0.6);
+  transition: all 0.2s;
+  &:hover {
+    text-decoration: underline;
+    color: map_get($colors, _white);
+    transition: all 0.2s;
+  }
+}
