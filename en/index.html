@@ -162,7 +162,7 @@
       </ul>
     </div>
   </nav>
-
+  <button class="js-gitter-toggle-chat-button gitter-custom-button">Open Chat</button>
   <body>
     <div class="layout-home">
       <div class="background-wrapper"><div class="container">
@@ -257,6 +257,14 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
+    <script>
+      ((window.gitter = {}).chat = {}).options = {
+        room: 'PyConColombia/Lobby',
+        activationElement: '.gitter-button',
+      };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
   </body>
 </html>
