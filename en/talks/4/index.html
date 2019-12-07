@@ -5,27 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <meta name="description"
-    content="PyCon Colombia 2020 will be the fourth national conference for users and developers of the Python programming language. It will be in Medellín, Colombia from February 7 to 9.">
 
-    <meta property="og:site_name" content="PyCon Colombia"/>
-    <meta property="og:title" content="PyCon Colombia | February 7th - 9th 2020 | Medellín, Colombia"/>
-    <meta property="og:description"
-    content="PyCon Colombia 2018 will be the fourth national conference for users and developers of the Python programming language. It will be in Medellín, Colombia from February 7 to 9."/>
-    <meta property="og:image" content="http://www.pycon.co/dist/images/opimage.png">
-    <meta property="og:url" content="http://www.pycon.co/">
-    <meta property="og:type" content="website"/>
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@pyconcolombia">
-    <meta name="twitter:creator" content="@soyelhijo">
-    <meta name="twitter:title" content="PyCon Colombia | February 7th - 9th 2020 | Medellín, Colombia">
-    <meta name="twitter:description"
-    content="PyCon Colombia 2020 will be the first national conference for users and developers of the Python programming language. It will be in Medellín, Colombia from February 7 to 9.">
-    <meta name="twitter:image" content="http://www.pycon.co/dist/images/opimage.png">
     <meta name="google-site-verification" content="Lb8Bugu2ORvYa3ZIYPfPDWFEntukt1Yztc4I8SDgJ6g" />
 
-    <title>PyCon Colombia | February 7th - 9th 2020 | Medellín, Colombia</title>
+    <link rel="canonical" href="/en/talks/4/" />
+    <meta property="og:locale" content="" />
+    <meta property="og:type" content="website" />
+
+    <meta property="og:url" content="/en/talks/4/" />
+    <meta property="og:site_name" content="PyCon Colombia 2020" />
+    <meta property="og:updated_time" content="2019-08-13T17:51:00+00:00" /><meta property="og:title" content="Programación en paralelo con Python: sácale jugo a los núcleos de tu computadora | PyCon Colombia 2020" />
+    <meta property="og:description" content="<p>Ahora más que nunca, personas de distintas áreas del conocimiento han aprendido a programar. Debido a su formación no técnica, los conceptos básicos de programación en paralelo son desconocidos y estamos perdiendo tiempo precioso de nuestras vidas al programar tareas largas de manera secuencial.</p>
+<p>En esta charla cubriremos los conceptos básicos de programación en paralelo con Python y mostraremos lo fácil que es implementarlo en Python. También aclararemos ciertos mitos como que en Python no hay paralelismo real e introduciremos distintas herramientas para usar fácilmente programación en paralelo con Python. Se explicarán ciertas consideraciones que debemos tener en cuenta para crear programas que hagan procesamiento en paralelo. Finalmente introduciremos unos casos de estudio, por ejemplo, de cómo aplicar programación en paralelo para acelerar la evaluación de modelos de Machine Learning.</p>
+<p>Outline</p>
+<p>Introducción (5 minutos)</p>
+<ul>
+<li>Problema: Todos tenemos acceso a distintos núcleos pero escribimos código que solamente utiliza un núcleo.</li>
+<li>Ejemplos de tareas que podemos hacer en paralelo </li>
+<li>Demostración en vivo de cómo se usa en nuestra vida diaria: ejecutar una operación de IO que bloquea una interfaz gráfica VS. una que utiliza hilos cuya interfaz no se bloquea.
+Hilos y procesos (10 minutos)</li>
+<li>Definición de hilos</li>
+<li>Definición de procesos</li>
+<li>Diferencia entre hilos y procesos </li>
+<li>El GIL en Python </li>
+<li>Cuándo usar hilos y cuándo usar procesos</li>
+<li>Sincronización </li>
+<li>Memoria compartida
+Paralelismo en Python (12 minutos)</li>
+<li>Hilos (Módulo threading)</li>
+<li>Procesos (Módulo multiprocessing)</li>
+<li>Pools y workers</li>
+<li>Librería joblib
+Casos de estudio (7 minutos)</li>
+<li>Procesando XML en paralelo</li>
+<li>Acelerando classifier chain en scikit-learn</li>
+<li>Ejecutar cross validation en paralelo
+Consideraciones (3 minutos)</li>
+<li>Paralelismo introduce complejidad al sistema </li>
+<li>Sincronización y tareas de corta duración pueden resultar en menor rendimiento</li>
+<li>Ciertos problemas no escalan linealmente</li>
+<li>No todos los problemas se pueden dividir fácilmente </li>
+<li>Frameworks como Spark y dask te dan paralelismo automático, dependiendo de la tarea.
+Preguntas (3 minutos)</li>
+</ul>
+<p>NB: En caso de ser necesario, la charla y las diapositivas pueden ser impartidas en inglés.</p>
+" />
+    <meta name="twitter:title" content="Programación en paralelo con Python: sácale jugo a los núcleos de tu computadora | PyCon Colombia 2020">
+    <meta name="twitter:description" content="<p>Ahora más que nunca, personas de distintas áreas del conocimiento han aprendido a programar. Debido a su formación no técnica, los conceptos básicos de programación en paralelo son desconocidos y estamos perdiendo tiempo precioso de nuestras vidas al programar tareas largas de manera secuencial.</p>
+<p>En esta charla cubriremos los conceptos básicos de programación en paralelo con Python y mostraremos lo fácil que es implementarlo en Python. También aclararemos ciertos mitos como que en Python no hay paralelismo real e introduciremos distintas herramientas para usar fácilmente programación en paralelo con Python. Se explicarán ciertas consideraciones que debemos tener en cuenta para crear programas que hagan procesamiento en paralelo. Finalmente introduciremos unos casos de estudio, por ejemplo, de cómo aplicar programación en paralelo para acelerar la evaluación de modelos de Machine Learning.</p>
+<p>Outline</p>
+<p>Introducción (5 minutos)</p>
+<ul>
+<li>Problema: Todos tenemos acceso a distintos núcleos pero escribimos código que solamente utiliza un núcleo.</li>
+<li>Ejemplos de tareas que podemos hacer en paralelo </li>
+<li>Demostración en vivo de cómo se usa en nuestra vida diaria: ejecutar una operación de IO que bloquea una interfaz gráfica VS. una que utiliza hilos cuya interfaz no se bloquea.
+Hilos y procesos (10 minutos)</li>
+<li>Definición de hilos</li>
+<li>Definición de procesos</li>
+<li>Diferencia entre hilos y procesos </li>
+<li>El GIL en Python </li>
+<li>Cuándo usar hilos y cuándo usar procesos</li>
+<li>Sincronización </li>
+<li>Memoria compartida
+Paralelismo en Python (12 minutos)</li>
+<li>Hilos (Módulo threading)</li>
+<li>Procesos (Módulo multiprocessing)</li>
+<li>Pools y workers</li>
+<li>Librería joblib
+Casos de estudio (7 minutos)</li>
+<li>Procesando XML en paralelo</li>
+<li>Acelerando classifier chain en scikit-learn</li>
+<li>Ejecutar cross validation en paralelo
+Consideraciones (3 minutos)</li>
+<li>Paralelismo introduce complejidad al sistema </li>
+<li>Sincronización y tareas de corta duración pueden resultar en menor rendimiento</li>
+<li>Ciertos problemas no escalan linealmente</li>
+<li>No todos los problemas se pueden dividir fácilmente </li>
+<li>Frameworks como Spark y dask te dan paralelismo automático, dependiendo de la tarea.
+Preguntas (3 minutos)</li>
+</ul>
+<p>NB: En caso de ser necesario, la charla y las diapositivas pueden ser impartidas en inglés.</p>
+">
+    <meta property="og:image" content="/dist/images/opimage.png" />
+    <meta property="og:image:secure_url" content="/dist/images/opimage.png" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+
+    
+    <title>Programación en paralelo con Python: sácale jugo a los núcleos de tu computadora | Talks | PyCon Colombia 2020</title>
+
 
     <link rel="apple-touch-icon" sizes="57x57" href="/dist/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/dist/favicon/apple-icon-60x60.png">
