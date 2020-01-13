@@ -69,8 +69,8 @@
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.4)));
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)); }
   .navbar.scrolled {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.7)));
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7)); }
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(white));
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), white); }
   .navbar .navigation .nav-link {
     display: inline-block;
     font-size: 1.4rem;
@@ -123,7 +123,11 @@
 
 @media (max-width: 991px) {
   .navbar {
-    background-color: #fff; }
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.4)));
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)); }
+    .navbar.scrolled {
+      background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(white));
+      background-image: linear-gradient(to top, rgba(255, 255, 255, 0), white); }
     .navbar .navbar-toggler {
       font-size: 2.4rem; }
     .navbar ul.navbar-nav li {
@@ -180,8 +184,8 @@
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.4)));
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)); }
   .navbar.scrolled {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.7)));
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7)); }
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(white));
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), white); }
   .navbar .navigation .nav-link {
     display: inline-block;
     font-size: 1.4rem;
@@ -234,7 +238,11 @@
 
 @media (max-width: 991px) {
   .navbar {
-    background-color: #fff; }
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.4)));
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4)); }
+    .navbar.scrolled {
+      background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(white));
+      background-image: linear-gradient(to top, rgba(255, 255, 255, 0), white); }
     .navbar .navbar-toggler {
       font-size: 2.4rem; }
     .navbar ul.navbar-nav li {

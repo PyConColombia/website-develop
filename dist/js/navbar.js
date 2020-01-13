@@ -95,7 +95,12 @@
 
 /* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
   var height = $(window).height();
-  $('.scrollable-menu').css('max-height', height);
+  $('.scrollable-menu').css('max-height', height); // Style menu responsive
+
+  $('.navbar-toggler').on('click', function () {
+    var openMenu = $(".show")[0] ? false : true;
+    $('.navbar').css('background-color', openMenu ? '#fff' : '');
+  });
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
