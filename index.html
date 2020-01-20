@@ -1471,6 +1471,9 @@
 <script type="text/javascript">
     $(window).on('load', function () {
         $('#intro-modal').modal('show');
+        $("#intro-modal").on('hidden.bs.modal', function () {
+            $("#intro-modal iframe").attr("src", null);
+        });
     });
 </script><script>
       ((window.gitter = {}).chat = {}).options = {
