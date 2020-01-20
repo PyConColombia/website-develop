@@ -136,7 +136,6 @@
       Team
     </a>
   </li>
-        
   
   
 
@@ -144,9 +143,7 @@
     <a href="/en/scholarships/" class="nav-link ">
       Scholarships
     </a>
-  </li>
-
-        <li class="dropdown">
+  </li><li class="dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">Events</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -177,7 +174,29 @@
   <button class="js-gitter-toggle-chat-button gitter-custom-button">
     Open Chat
   </button>
-  <body><div class="layout-home">
+  <body><!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="intro-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kSFuK_yNX8s?autoplay=1" id="video" allowscriptaccess="always"
+                        allow="autoplay"></iframe>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="layout-home">
     <div class="background-wrapper">
         <div class="container">
             <div class="logotype-container logotype logos wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1.2s">
@@ -1217,29 +1236,6 @@
         
         
         
-            <div class="django-girls wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1.2s" data-wow-offset="-1000">
-                <div class="container">
-                    <div class="call-to-actions row">
-                        <div class="text-center col-md-12">
-                            <div class="logo">
-                                <img src="/dist/images/django-girls-pycon-logo-white.svg">
-                            </div>
-                        </div>
-                        <div class="text-center col-md-12">
-                            <p>We want to encourage more women to dominate the web! That's why from Django Girls Colombia and PyCon Colombia with the support of Python Colombia and Argentina in Python we are organizing a workshop on February 6 where you can build your own website from scratch in a day. In addition, we will use all the tools that professional programmers use daily. And in a very simple way!</p>
-<p>You can participate as Assistant to learn in the workshop or as Coach (If you are fluent in Spanish) serving as a mentor to the attendees</p>
-<p>Only requirement: Register and wait for confirmation email on January 16.</p>
-
-                        </div>
-                    </div>
-                    <div class="row justify-content-center dg-button">
-                        <a href="https://djangogirls.org/medellin/" target="_blank" class="btn btn-primary btn-lg hidden">
-                            <span>Tell me more</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        
 
         <div class="venue wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1.2s" data-wow-offset="-1000">
             <div class="call-to-actions row">
@@ -1273,13 +1269,15 @@
 <div class="row-sponsor">
     <div class="row">
         
-        <div class="col-md-8 col-sm-12 col-xs-12 mx-auto">
-            <div class="sponsor-ini">
-                <a href="/en/sponsors/eafit/">
-                    <img src="/patrocinadores/eafit/eafit.svg"/>
-                </a>
-            </div>
-        </div>
+            
+                <div class="col-md-8 col-sm-12 col-xs-12 mx-auto">
+                    <div class="sponsor-ini">
+                        <a href="/en/sponsors/eafit/">
+                            <img src="/patrocinadores/eafit/eafit.svg" />
+                        </a>
+                    </div>
+                </div>
+            
         
     </div>
 </div>
@@ -1291,13 +1289,15 @@
 <div class="row-sponsor">
     <div class="row">
         
-        <div class="col-md-6 col-sm-12 col-xs-12 mx-auto">
-            <div class="sponsor-ini">
-                <a href="/en/sponsors/globant/">
-                    <img src="/patrocinadores/globant/globant.svg"/>
-                </a>
-            </div>
-        </div>
+            
+                <div class="col-md-6 col-sm-12 col-xs-12 mx-auto">
+                    <div class="sponsor-ini">
+                        <a href="/en/sponsors/globant/">
+                            <img src="/patrocinadores/globant/globant.svg" />
+                        </a>
+                    </div>
+                </div>
+            
         
     </div>
 </div>
@@ -1308,37 +1308,55 @@
 <div class="row-sponsor">
     <div class="row">
         
-        <div class="col-md-5 col-sm-12 col-xs-12 mx-auto">
-            <div class="sponsor-ini">
-                <a href="/en/sponsors/mercado-libre/">
-                    <img src="/patrocinadores/mercado-libre/mercado-libre.svg"/>
-                </a>
-            </div>
-        </div>
+            
+                <div class="col-md-5 col-sm-12 col-xs-12 mx-auto">
+                    <div class="sponsor-ini">
+                        <a href="/en/sponsors/mercado-libre/">
+                            <img src="/patrocinadores/mercado-libre/mercado-libre.svg" />
+                        </a>
+                    </div>
+                </div>
+            
         
-        <div class="col-md-5 col-sm-12 col-xs-12 mx-auto">
-            <div class="sponsor-ini">
-                <a href="/en/sponsors/monoku/">
-                    <img src="/patrocinadores/monoku/monoku.svg"/>
-                </a>
-            </div>
-        </div>
+            
+                <div class="col-md-2 col-sm-12 col-xs-12 mx-auto">
+                    <div class="sponsor-ini">
+                        <a href="/en/sponsors/monadical/">
+                            <img src="/patrocinadores/monadical/monadical.svg" />
+                        </a>
+                    </div>
+                </div>
+            
         
-        <div class="col-md-5 col-sm-12 col-xs-12 mx-auto">
-            <div class="sponsor-ini">
-                <a href="/en/sponsors/playvox/">
-                    <img src="/patrocinadores/playvox/playvox.svg"/>
-                </a>
-            </div>
-        </div>
+            
+                <div class="col-md-5 col-sm-12 col-xs-12 mx-auto">
+                    <div class="sponsor-ini">
+                        <a href="/en/sponsors/monoku/">
+                            <img src="/patrocinadores/monoku/monoku.svg" />
+                        </a>
+                    </div>
+                </div>
+            
         
-        <div class="col-md-5 col-sm-12 col-xs-12 mx-auto">
-            <div class="sponsor-ini">
-                <a href="/en/sponsors/uruit/">
-                    <img src="/patrocinadores/uruit/uruit.svg"/>
-                </a>
-            </div>
-        </div>
+            
+                <div class="col-md-5 col-sm-12 col-xs-12 mx-auto">
+                    <div class="sponsor-ini">
+                        <a href="/en/sponsors/playvox/">
+                            <img src="/patrocinadores/playvox/playvox.svg" />
+                        </a>
+                    </div>
+                </div>
+            
+        
+            
+                <div class="col-md-5 col-sm-12 col-xs-12 mx-auto">
+                    <div class="sponsor-ini">
+                        <a href="/en/sponsors/uruit/">
+                            <img src="/patrocinadores/uruit/uruit.svg" />
+                        </a>
+                    </div>
+                </div>
+            
         
     </div>
 </div>
@@ -1349,13 +1367,15 @@
 <div class="row-sponsor">
     <div class="row">
         
-        <div class="col-md-5 col-sm-12 col-xs-12 mx-auto">
-            <div class="sponsor-ini">
-                <a href="/en/sponsors/fluid-attacks/">
-                    <img src="/patrocinadores/fluid-attacks/fluidattacks.svg"/>
-                </a>
-            </div>
-        </div>
+            
+                <div class="col-md-5 col-sm-12 col-xs-12 mx-auto">
+                    <div class="sponsor-ini">
+                        <a href="/en/sponsors/fluid-attacks/">
+                            <img src="/patrocinadores/fluid-attacks/fluidattacks.svg" />
+                        </a>
+                    </div>
+                </div>
+            
         
     </div>
 </div>
@@ -1366,13 +1386,35 @@
 <div class="row-sponsor">
     <div class="row">
         
-        <div class="col-md-4 col-sm-12 col-xs-12 mx-auto">
-            <div class="sponsor-ini">
-                <a href="/en/sponsors/swapps/">
-                    <img src="/patrocinadores/swapps/swapps.svg"/>
-                </a>
-            </div>
-        </div>
+            
+                <div class="col-md-4 col-sm-12 col-xs-12 mx-auto">
+                    <div class="sponsor-ini">
+                        <a href="/en/sponsors/swapps/">
+                            <img src="/patrocinadores/swapps/swapps.svg" />
+                        </a>
+                    </div>
+                </div>
+            
+        
+            
+                <div class="col-md-4 col-sm-12 col-xs-12 mx-auto">
+                    <div class="sponsor-ini">
+                        <a href="/en/sponsors/tributi/">
+                            <img src="/patrocinadores/tributi/tributi.svg" />
+                        </a>
+                    </div>
+                </div>
+            
+        
+            
+                <div class="col-md-4 col-sm-12 col-xs-12 mx-auto">
+                    <div class="sponsor-ini">
+                        <a href="/en/sponsors/vanhack/">
+                            <img src="/patrocinadores/vanhack/vanhack.svg" />
+                        </a>
+                    </div>
+                </div>
+            
         
     </div>
 </div>
@@ -1384,13 +1426,15 @@
 <div class="row-sponsor">
     <div class="row">
         
-        <div class="col-md-3 col-sm-12 col-xs-12 mx-auto">
-            <div class="sponsor-ini">
-                <a href="/en/sponsors/avanet/">
-                    <img src="/patrocinadores/avanet/avanet.svg"/>
-                </a>
-            </div>
-        </div>
+            
+                <div class="col-md-3 col-sm-12 col-xs-12 mx-auto">
+                    <div class="sponsor-ini">
+                        <a href="/en/sponsors/avanet/">
+                            <img src="/patrocinadores/avanet/avanet.svg" />
+                        </a>
+                    </div>
+                </div>
+            
         
     </div>
 </div>
@@ -1431,7 +1475,12 @@
         </div>
     </div>
 </div>
-</div><script>
+</div>
+<script type="text/javascript">
+    $(window).on('load', function () {
+        $('#intro-modal').modal('show');
+    });
+</script><script>
       ((window.gitter = {}).chat = {}).options = {
         room: 'PyConColombia/Lobby',
         activationElement: '.gitter-button',
