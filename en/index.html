@@ -71,6 +71,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-105321720-3');
     </script>
+    <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
     <script>
       $(document).ready(function() {});
@@ -172,6 +173,23 @@
     Open Chat
   </button>
   <body>
+    <!-- Modal -->
+    <div class="modal fade" id="intro-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kSFuK_yNX8s" id="video" allowscriptaccess="always"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 <div class="layout-home">
     <div class="background-wrapper">
@@ -189,14 +207,6 @@
             
 
             <div class="row event-info justify-content-center">
-                
-                <div class="event-ticket col-md-4 ">
-                    <a id="eventbrite-widget-modal-trigger-56463397542">
-                        
-                            <img src="/dist/images/sold_out_en.svg">
-                        
-                    </a>
-                </div>
                 
                 
             </div>
@@ -657,6 +667,15 @@
     </div>
 </div>
 </div>
+
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('#intro-modal').modal('show');
+            $("#intro-modal").on('hidden.bs.modal', function () {
+                $("#intro-modal iframe").attr("src", null);
+            });
+        });
+    </script>
 <script>
       ((window.gitter = {}).chat = {}).options = {
         room: 'PyConColombia/Lobby',
