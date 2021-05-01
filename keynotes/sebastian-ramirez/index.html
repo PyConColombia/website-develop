@@ -101,6 +101,12 @@
             Patrocinadores<span class="sr-only"></span>
         </a>
     </li>
+
+                    
+                        <li class="nav-item">
+                            <a class="nav-link nav-primary" id="eventbrite-widget-modal-trigger-150344629835">Tickets</a>
+                        </li>
+                    
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
@@ -161,7 +167,7 @@
                                 <div class="row justify-content-center">
                                     <div class="col-sm-12">
                                         <h4 class="speaker-job">
-                                            Creator of FastAPI, Typer and other open source tools<br />
+                                            Creador de FastAPI, Typer y otras herramientas Open source<br />
                                             
                                         </h4>
                                     </div>
@@ -180,7 +186,7 @@
                             <div class="row justify-content-center align-self-center">
                                 <div class="col-md-10 col-sm-12">
                                     <div class="speaker-info">
-                                        <p><p>I'm tiangolo (Sebastián Ramírez), the creator of FastAPI, Typer, and other open source tools.</p>
+                                        <p><p>Soy tiangolo (Sebastián Ramírez), el creador de FastAPI,Typer, y otras herramientas de código abierto.</p>
 </p>
                                     </div>
                                 </div>
@@ -251,5 +257,21 @@
         })();
     </script>
     <!--End of Tawk.to Script-->
+
+    <noscript><a href="https://www.eventbrite.com/e/pycon-colombia-2021-tickets-150344629835" rel="noopener noreferrer"
+            target="_blank"></noscript>
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+    <script type="text/javascript">
+        var exampleCallback = function () {
+            console.log('Order complete!');
+        };
+        window.EBWidgets.createWidget({
+            widgetType: 'checkout',
+            eventId: '150344629835',
+            modal: true,
+            modalTriggerElementId: 'eventbrite-widget-modal-trigger-150344629835',
+            onOrderComplete: exampleCallback
+        });
+    </script>
     </body>
 </html>
