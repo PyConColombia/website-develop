@@ -1,0 +1,354 @@
+// Content
+@import "content/header"
+
+h1
+    padding 80px 0 50px
+    text-shadow 0 5px 10px rgba(rgb-primary,.9)
+    span 
+        color color-text-primary
+        display block
+        font-size 40px
+        font-weight 800
+        text-align right
+
+.whale-background
+    background url('../img/whale.webp') left bottom no-repeat
+    background-size auto
+    margin auto
+    max-width 1500px
+
+.logo-index
+    width 100%
+
+.title-intro
+    margin 0px auto 50px auto
+    position relative
+    img
+        width 100%
+    .intro-container
+        position absolute
+        text-align center
+        top 52%
+        width 100%
+        h2 
+            color color-text-primary
+            display inline-block
+            font-size 30px
+            font-weight 700
+            text-align left
+            text-shadow 0 5px 10px rgba(rgb-primary,.9)
+            margin auto
+            span
+                display block
+                font-size 45px
+
+.text-container
+    color color-text-primary
+    p
+        font-size 52px
+        font-weight 700
+        text-align right 
+        text-shadow 0 5px 10px rgba(rgb-primary,.9)
+        padding 150px 0 130px
+        span
+            display block
+            font-size 32px
+            font-weight 600
+.planet-pink
+    padding 0 0 50px
+    width 100%
+
+
+.soon-title
+    color color-text-primary
+    font-size 48px
+    font-weight 700
+    text-align center
+    text-shadow 0 5px 10px rgba(rgb-primary,.9)
+    padding 200px 0 180px
+
+footer
+    .social-container
+        margin-top 50px
+        text-align center
+        a
+            .social-icon
+                color color-white
+                display inline-block
+                height 40px
+                margin 0 20px
+                padding 5px
+                width 40px
+                &:hover
+                    transform scale(1.2)
+    p
+        color color-text-primary
+        font-size 21px
+        font-weight 300
+        text-align center
+        padding 20px 0
+        text-shadow 0 5px 10px rgba(rgb-primary,.9)
+    
+    a
+        color color-text-primary
+
+.timeline
+    margin 100px 0
+    .timeline-item
+        .timeline-image
+            max-width 100px
+        .timeline-date
+            color color-white
+            font-size 28px
+            text-transform capitalize
+        .timeline-description
+            color color-white
+            font-size 40px
+            padding-top 20%
+
+.speaker-info
+    margin 20px auto
+    width 100%
+    .speaker-avatar
+        max-width 100%
+        margin-bottom 25px
+        .avatar-shadow
+            webkit-box-shadow 0 0 50px rgba(0, 152, 184,0.9), 0 0 100px #fff
+            box-shadow 0 0 50px rgba(0, 152, 184,0.9), 0 0 100px #fff
+            &.square
+                border-radius 50%
+                height auto
+                overflow hidden
+                margin 0 auto
+                width 80%
+            img
+                width 100%
+    .speaker-description
+        text-align right
+        &.alt
+            text-align left
+        .speaker-title
+            margin-top 0
+
+
+article
+    &.body-content
+        margin 100px 0
+
+.newsletter
+    margin 150px 0
+    .title
+        text-align center
+    .form-subscribe
+        margin 30px 0 15px 0
+        input, select
+            border none
+            border-radius 25px
+            height 40px
+            outline none
+            padding-left 20px
+            padding-right 20px
+            width 100%
+    .subscribe-btn
+        font-size inherit
+        height 40px
+        width 100%
+
+.badge-anniversary
+    float right 
+    height 100px
+    margin-top 100px
+    position fixed
+    right 0
+    width auto
+    z-index 1
+
+.modal-news
+    .modal-header
+        padding-top 0
+        padding-bottom 0
+    .close-modal
+        background none
+        border none
+        color #000
+        font-size 2rem
+        font-weight normal
+        opacity 1
+        outline none
+        top 0
+    .modal-body
+        .logo-container
+            padding 30px 0
+            text-align center
+            .logo-modal
+                max-width 500px
+                width 100%
+        p
+            color #000
+
+.content
+    #content-iframe
+        width 100%
+        height 700px
+    &.speaker
+        .speaker-job
+            margin-top 0
+        .social-container
+            margin-bottom 50px
+            text-align center
+            a
+                text-decoration none
+                .social-icon
+                    color color-white
+                    display inline-block
+                    height 40px
+                    margin 0 20px
+                    padding 5px
+                    width 40px
+                    &:hover
+                        transform scale(1.2)
+        .video-talk
+            position relative
+            width 100%
+            height 0
+            margin 3rem 0
+            padding-bottom 56.25%
+
+        .video
+            position absolute
+            top 0
+            left 0
+            width 100%
+            height 100%
+
+.sponsors
+    .row-sponsor
+        padding 15px 0
+        .sponsor-ini
+            padding 10px 0
+            img
+                width 100%
+
+.event-ticket
+    cursor pointer
+    padding 30px 0
+
+    img
+        -webkit-transition: all 4s;
+        -moz-transition: all 4s;
+
+        &:hover
+            -webkit-animation-duration 0.5s
+            animation-duration 0.5s
+            -webkit-animation-name shake
+            animation-name shake
+
+// Video Intro
+
+.modal-dialog
+    max-width 800px
+    margin 30px auto
+
+.modal-body
+    position relative
+    padding 0px
+
+.close-modal
+    background none
+    border none
+    position absolute
+    right -30px
+    top 0
+    z-index 999
+    font-size 2rem
+    font-weight normal
+    color #fff
+    opacity 1
+
+.sponsor-web
+    padding 10px 0
+
+@media (max-width 991px)
+
+    h1
+        span 
+            font-size 30px
+
+    .whale-background
+        background-size 70%
+
+    .title-intro
+        .intro-container
+            h2
+                font-size 25px
+                margin-left 5%
+                span
+                    font-size 40px
+
+    .text-container
+        p
+            font-size 47px
+            span
+                font-size 27px
+
+    .soon-title
+        font-size 38px
+
+    footer
+        p
+            font-size 16px
+
+    .timeline
+        .timeline-item
+            margin 50px 0
+
+
+@media (max-width 767px)
+    body
+        margin 0 20px
+
+    h1
+        span 
+            font-size 25px
+            font-weight bold
+
+    .whale-background
+        background-size contain
+
+    .text-container
+        p
+            font-size 29px
+            padding 50px 0
+            span
+                font-size 23px
+                font-weight light
+    
+    .planet-pink
+        padding 0 0 50px
+    
+    .planet-pink
+        opacity 0
+        visibility hidden
+
+    .soon-title
+        font-size 27px
+        font-weight bold
+        margin-top -20px
+        padding 110px 0
+
+    footer
+        .social-container
+            a
+                .social-icon
+                    margin-bottom 15px
+        p
+            font-size 16px
+
+    .timeline
+        .timeline-item
+            margin 50px 0
+            .timeline-description
+                padding-top 0
+
+    .badge-anniversary
+        display none
