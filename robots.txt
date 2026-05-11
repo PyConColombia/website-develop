@@ -6,4 +6,4 @@ Disallow: /register
 Disallow: /forgot-password
 Disallow: /reset-password
 
-Sitemap: https://PyConColombia.github.io/website-2026/sitemap.xml
+Sitemap: https://develop.pycon.co/sitemap.xml
